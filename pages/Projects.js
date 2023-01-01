@@ -22,6 +22,9 @@ export default function Project() {
                     <section className="flex flex-col px-5">
                         <h2 className="font-semibold text-lg">Shopping Cart</h2>
                         <p className="py-2">Website created with Js, Css, HTML, React framework.</p>
+                        <a href="https://tskar.github.io/shopping-list/">
+                            <button className="bg-green-500 px-4 py-2 text-black font-bold text-lg">Check it out!</button>
+                        </a>
                     </section>
                 </div>
                 <div className="bg-white flex border-gray-400 border-2">
@@ -29,6 +32,9 @@ export default function Project() {
                     <section className="px-5">
                         <h2 className="font-semibold text-lg">Project Algorithm</h2>
                         <p className="py-2">Fun and educational project created with React framework.</p>
+                        <a href="https://tskar.github.io/project-algorithm/">
+                            <button className="bg-green-500 px-4 py-2 text-black font-bold text-lg">Check it out!</button>
+                        </a>
                     </section>
                 </div>
                 <div className="bg-white flex border-gray-400 border-2">
@@ -36,6 +42,9 @@ export default function Project() {
                     <section className="px-5">
                         <h2 className="font-semibold text-lg">Find Recipe</h2>
                         <p className="py-2">Fully functional website created with React framework.</p>
+                        <a href="https://tskar.github.io/project-recipe/">
+                            <button className="bg-green-500 px-4 py-2 text-black font-bold text-lg">Check it out!</button>
+                        </a>
                     </section>
                 </div>
             </div>

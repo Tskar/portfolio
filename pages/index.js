@@ -23,9 +23,15 @@ export default function Home() {
 
       <Titlebar />
       <main className="bg-gray-200">
-        <Intro />
-        <Project />
-        <Contact />
+        <section id="Intro" className="snap-start">
+          <Intro />
+        </section>
+        <section id="Project" className="snap-center">
+          <Project />
+        </section>
+        <section id="Contact" className="snap-end">
+          <Contact />
+        </section>
       </main>
     </div>
   )
