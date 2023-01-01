@@ -9,11 +9,12 @@ export default function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        form.current.reset();
         emailjs.sendForm("service_1s0f84y", "template_ah2n5ui", form.current, "7uGUxY5wVeNEmFFqM")
           .then((result) => {
               console.log(result.text);
               console.log("message sent");
+              
               alert("Success!" + result.status)
               
               
