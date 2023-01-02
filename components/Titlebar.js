@@ -1,27 +1,24 @@
-import {AiFillGithub, AiFillInstagram, AiOutlineMail} from 'react-icons/ai';
 import Link from 'next/link'
 
 
 export default function Titlebar() {
 
     return (
-        <nav className="flex flex-col py-5 px-4 justify-center text-center bg-green-500">
+        <nav className="flex py-5 px-4 justify-between text-center bg-[#e7a923]">
 
-                <h1 className="text-xl py-2 font-bold">
+            <Link href={"#Welcome"}>
+                <h1 className="navButton font-bold cursor-pointer">
                     Sanskar Thapa
                 </h1>
-                <div className="flex justify-center gap-4 text-2xl">
-                    <a href="https://github.com/Tskar">
-                        <AiFillGithub />
-                    </a>
-                    <a href="https://www.instagram.com/sanskarthapa7/">
-                        <AiFillInstagram />
-                    </a>
-                    <Link href={"#Contact"}>
-                        <AiOutlineMail />
-                    </Link>
-
-                </div>
-            </nav>
+            </Link>
+            <ul className="flex gap-8 items-center font-medium">
+                <Link className="navButton" href={"#Project"}>
+                    <li className="">Projects</li>
+                </Link>
+                <Link className="navButton" href={"#Contact"}>
+                    <li className="">Contact</li>
+                </Link>
+            </ul>
+        </nav>
     );
 }

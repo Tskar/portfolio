@@ -67,3 +67,23 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+@layer components {
+
+  .navButton {
+
+    @apply uppercase tracking-widest transition-all
+  }
+
+
+  .projectButtons {
+    @apply bg-[#e7a923] rounded-md px-4 py-2 text-black font-bold text-lg
+  }
+
+  .contactInput {
+
+    @apply bg-slate-100/40 rounded-sm outline-none border-b px-6 py-4 border-[#242424]
+    text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40
+    focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40
+  }
+}
