@@ -7,7 +7,7 @@ export default function Titlebar() {
     return (
         <nav className="flex flex-col py-5 px-4 justify-center text-center bg-green-500">
 
-                <h1 className="text-xl font-bold">
+                <h1 className="text-xl py-2 font-bold">
                     Sanskar Thapa
                 </h1>
                 <div className="flex justify-center gap-4 text-2xl">
