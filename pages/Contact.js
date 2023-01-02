@@ -9,7 +9,7 @@ export default function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        form.current.reset();
+
         emailjs.sendForm("service_1s0f84y", "template_ah2n5ui", form.current, "7uGUxY5wVeNEmFFqM")
           .then((result) => {
               console.log(result.text);
@@ -22,6 +22,7 @@ export default function Contact() {
               console.log(error.text);
               console.log("message error");
           });
+          form.current.reset();
       };
 
     return (
