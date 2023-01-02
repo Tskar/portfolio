@@ -6,7 +6,7 @@ export default function Titlebar() {
     return (
         <nav className="flex py-5 px-4 justify-between text-center bg-[#e7a923]">
 
-            <Link href={"#Welcome"}>
+            <Link href={"#Intro"}>
                 <h1 className="navButton font-bold cursor-pointer">
                     Sanskar Thapa
                 </h1>

@@ -8,15 +8,16 @@ import p3image1 from "../public/p3image1.png";
 export default function Projects() {
 
     return (
-        <div className="min-h-screen relative flex flex-col justify-evenly items-center mx-auto "> 
-            <h3 className="uppercase py-4 tracking-[20px] text-gray-500 text-2xl">
+        <div className="min-h-screen relative flex flex-col gap-4 items-center justify-evenly mx-auto "> 
+            <h3 className="uppercase py-8 tracking-[20px] text-gray-500 text-2xl">
                 Projects
             </h3>
-            <p className="text-md py-4 leading-8 text-gray-800">
-                These are some of the projects I have worked on to understand the basics
-                of software life cycle.
-            </p>
-            <div className="flex flex-col gap-10 w-[60%]">
+
+            <div className="flex flex-col py-10 gap-10 w-[60%]">
+                <p className="text-md text-gray-800">
+                    These are some of the projects I have worked on to understand the basics
+                    of software life cycle.
+                </p>
                 <div className="bg-white flex border-gray-400 border-2">
                     <Image src= {p1image1} className="w-[60%]"/>
                     <section className="flex flex-col px-5">

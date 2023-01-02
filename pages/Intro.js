@@ -8,7 +8,7 @@ export default function Intro() {
             <h1 className="text-9xl tracking-[10px] text-white drop-shadow-lg">
                 programmer
             </h1>
-            <h2 className="uppercase py-4 tracking-[20px] text-gray-500 text-lg mt-2">
+            <h2 className="uppercase py-4 tracking-[20px] text-gray-500 text-2xl mt-2">
                 Sanskar Thapa
             </h2>
             <h2 className="text-xl py-2 text-gray-800 font-medium">
@@ -17,7 +17,7 @@ export default function Intro() {
             <p className="text-md py-2 leanding-8 text-gray-800">
                 HTML, CSS, JS
             </p>
-            <p className="text-md py-2 leanding-8 text-gray-800">I'm a software developer specializing in both frontend and backend developmet
+            <p className="text-md py-2 px-24 leanding-8 text-gray-800">I'm a software developer specializing in both frontend and backend developmet
                 for projects scaling from simple to complex scalable applications. If you would
                 like to know more about me, feel free to scroll down.. 
             </p>
