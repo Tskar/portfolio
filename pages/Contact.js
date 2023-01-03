@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+import { motion } from "framer-motion";
 
 
 export default function Contact() {
@@ -26,7 +27,12 @@ export default function Contact() {
       };
 
     return (
-        <div className="h-screen flex flex-col justify-evenly items-center"> 
+
+        <motion.div 
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration: 1.5}}
+        className="min-h-screen flex flex-col justify-evenly items-center"> 
             <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
                 Contact
             </h3>
@@ -35,13 +41,13 @@ export default function Contact() {
                 <h4 className="4xl font-semibold text-center">
                     I believe I have got what you need. Please shoot me a message.
                 </h4>
-                <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-2">
+                <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-1">
                     <input type="text" placeholder="Name" className="contactInput mb-2" name="user_name" />
                     <input type="email" placeholder="Email" className="contactInput mb-2" name="user_email" />
                     <textarea type="message" placeholder="Message.." className="contactInput mb-2" name="message" />
                     <button type='submit' className="bg-[#e7a923] py-5 px-10 rounded-lg text-black hover:text-white font-bold text-lg">Send</button>
                 </form>
             </div>
-        </div>
+        </motion.div>
     );
 }

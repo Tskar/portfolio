@@ -70,19 +70,37 @@ a {
 
 @layer components {
 
+  @media (max-width:767px) {
+    .hidden-mobile {
+      display: none;
+    }
+
+
+
+    .pop-up-menu {
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 80%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+
   .navButton {
 
-    @apply uppercase tracking-widest transition-all hover:text-white text-lg
+    @apply uppercase tracking-widest transition-all hover:text-gray-400
   }
 
 
   .projectButtons {
-    @apply bg-[#e7a923] hover:text-white rounded-md px-4 py-2 text-black font-bold text-lg
+    @apply bg-[#e7a923] hover:text-white rounded-md px-4 py-1 text-black font-bold text-lg
   }
 
   .contactInput {
 
-    @apply bg-gray-100/40 rounded-sm outline-none border-b px-6 py-4 border-[#242424]
+    @apply w-[100%] px-6 py-4 bg-gray-100/40 rounded-sm outline-none border-b border-[#242424]
     text-gray-600 placeholder-gray-400 transition-all focus:border-[#e7a923]/80
     focus:text-[#e7a923] hover:border-[#e7a923]/40
   }
