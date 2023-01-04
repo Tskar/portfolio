@@ -16,17 +16,18 @@ export default function Projects() {
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
             transition={{duration: 2}}
-            className="min-h-screen flex relative flex-col text-center md:text-left max-w-7xl px-10 justify-center mx-auto items-center">
+            className="min-h-screen py-10 flex relative flex-col text-center 
+                md:text-left max-w-7xl px-10 justify-center mx-auto items-center text-gray-500 dark:text-gray-300">
             <div className="flex flex-col justify-center text-center">
-                <h3 className="uppercase py-4 tracking-[20px] text-gray-500 text-2xl">
+                <h3 className="uppercase py-4 tracking-[20px]  text-2xl">
                     Portfolio
                 </h3>
-                <p className="text-md py-4 leading-8 text-gray-800">
+                <p className="text-md py-4 leading-8 text-gray-800 dark:text-gray-400">
                     These are some of the projects I have worked on to understand the basics
                     of software life cycle.
                 </p>
             </div>
-            <div className="flex flex-col gap-10 h-auto lg:flex-row lg:flex-wrap">
+            <div className="flex flex-col gap-10 h-auto lg:flex-row lg:flex-wrap max-w-screen-sm">
                 <div className="flex-1 basis-1/3 relative">
                     <Image src={p1image1} className="rounded-xl" width={'100%'} height={'100%'}/>
                     <div className="absolute top-0 opacity-80 rounded-xl w-[100%] h-[100%] transition duration-300

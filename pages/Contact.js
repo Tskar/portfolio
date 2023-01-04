@@ -32,8 +32,8 @@ export default function Contact() {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 2}}
-        className="min-h-screen flex flex-col justify-evenly items-center"> 
-            <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
+        className="min-h-screen flex flex-col justify-evenly items-center dark:text-gray-400"> 
+            <h3 className="uppercase tracking-[20px] text-gray-500 dark:text-gray-300 text-2xl">
                 Contact
             </h3>
 
@@ -41,7 +41,7 @@ export default function Contact() {
                 <h4 className="4xl font-semibold text-center">
                     I believe I have got what you need. Please shoot me a message.
                 </h4>
-                <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-1">
+                <form ref={form} onSubmit={sendEmail} className="formfieldw flex flex-col gap-1">
                     <input type="text" placeholder="Name" className="contactInput mb-2" name="user_name" />
                     <input type="email" placeholder="Email" className="contactInput mb-2" name="user_email" />
                     <textarea type="message" placeholder="Message.." className="contactInput mb-2" name="message" />

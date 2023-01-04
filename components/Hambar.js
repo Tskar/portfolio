@@ -12,7 +12,7 @@ export default function Hambar({active, handleClose}) {
         <motion.div 
             initial={{right:-200}}
             whileInView={{right:0}}
-            transition={{duration: 1}}
+            transition={{duration: .5}}
             className="fixed bg-black/60 backdrop-blur-sm right-0 top-0 w-[60%] h-[100vh] text-white flex justify-center">
             <div className="navButton fixed right-10 top-10">
                 <CgClose className="text-lg" onClick={handleClose}/>

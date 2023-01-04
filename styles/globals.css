@@ -75,6 +75,13 @@ a {
       display: none;
     }
 
+    @media (max-width:500px) {
+      .formfieldw {
+        align-self: center;
+        max-width: 25em;
+      }
+    }
+  
 
 
     .pop-up-menu {
@@ -100,7 +107,7 @@ a {
 
   .contactInput {
 
-    @apply w-[100%] px-6 py-4 bg-gray-100/40 rounded-sm outline-none border-b border-[#242424]
+    @apply w-[100%] px-6 py-4 bg-gray-100/40 outline-none border-b border-[#242424]
     text-gray-600 placeholder-gray-400 transition-all focus:border-[#e7a923]/80
     focus:text-[#e7a923] hover:border-[#e7a923]/40
   }
