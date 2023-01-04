@@ -15,7 +15,7 @@ export default function Projects() {
         <motion.div 
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
-            transition={{duration: 1.5}}
+            transition={{duration: 2}}
             className="min-h-screen flex relative flex-col text-center md:text-left max-w-7xl px-10 justify-center mx-auto items-center">
             <div className="flex flex-col justify-center text-center">
                 <h3 className="uppercase py-4 tracking-[20px] text-gray-500 text-2xl">

@@ -1,13 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
 
 import Titlebar from '../components/Titlebar';
 import Intro from './Intro';
-import Projects from './Projects';
+import About from './About';
+import Projects from './Projects'; 
 import Contact from './Contact';
 
 export default function Home() {
@@ -24,6 +23,9 @@ export default function Home() {
       <main className="">
         <section id="Intro" className="snap-start">
           <Intro />
+        </section>
+        <section id="About" className="snap-center">
+          <About />
         </section>
         <section id="Projects" className="snap-center">
           <Projects />

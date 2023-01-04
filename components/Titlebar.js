@@ -12,14 +12,17 @@ export default function Titlebar() {
 
 
     return (
-        <nav className="sticky top-0 z-20 flex py-4 px-4 justify-between text-center bg-transparent text-sm md:text-lg lg:text-xl">
+        <nav className="sticky top-0 z-20 flex py-4 px-4 justify-between text-center text-sm md:text-lg lg:text-xl">
 
             <Link href={"#Intro"}>
-                <h1 className="navButton font-bold cursor-pointer">
+                <h1 className="navButton ml-6 font-bold cursor-pointer">
                     Sanskar Thapa
                 </h1>
             </Link>
             <ul className="flex gap-8 items-center font-medium">
+                <Link className="navButton hidden-mobile" href={"#About"}>
+                    <li className="">About</li>
+                </Link>
                 <Link className="navButton hidden-mobile" href={"#Projects"}>
                     <li className="">Projects</li>
                 </Link>
@@ -32,7 +35,6 @@ export default function Titlebar() {
                 <li>
                     {active && <Hambar className="md:hidden lg:hidden" active={active} handleClose={()=>setActive(false)}/>}
                 </li>
-
             </ul>
         </nav>
     );

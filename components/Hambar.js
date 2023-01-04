@@ -18,7 +18,11 @@ export default function Hambar({active, handleClose}) {
                 <CgClose className="text-lg" onClick={handleClose}/>
             </div>
              <ul className="flex flex-col w-[100%] justify-center gap-8 items-center font-medium">
-                
+
+                <Link className="navButton text-2xl" href={"#About"}>
+                    <li className="hover:text-gray-400 hover:translate-y-[-5px]">About</li>
+                </Link>
+
                 <Link className="navButton text-2xl" href={"#Projects"}>
                     <li className="hover:text-gray-400 hover:translate-y-[-5px]">Projects</li>
                 </Link>

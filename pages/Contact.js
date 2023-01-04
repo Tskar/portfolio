@@ -31,13 +31,13 @@ export default function Contact() {
         <motion.div 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
-        transition={{duration: 1.5}}
+        transition={{duration: 2}}
         className="min-h-screen flex flex-col justify-evenly items-center"> 
             <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
                 Contact
             </h3>
 
-            <div className="flex flex-col space-y-10">
+            <div className="flex flex-col max-w-4xl mx-auto space-y-10">
                 <h4 className="4xl font-semibold text-center">
                     I believe I have got what you need. Please shoot me a message.
                 </h4>
