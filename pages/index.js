@@ -26,7 +26,7 @@ export default function Home() {
         </Head>
 
         <Titlebar darkMode={darkMode} setDarkMode={setDarkMode}/>
-        <main className="px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+        <main className="dark:bg-gray-900">
           <section id="Intro" className="snap-start">
             <Intro/>
           </section>
